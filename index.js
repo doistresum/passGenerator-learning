@@ -5,7 +5,7 @@ let pass1EL = document.getElementById("pass1-el")
 let pass2EL = document.getElementById("pass2-el")
 let generatePassBtn = document.getElementById("generate-pass")
 
-generatePassBtn.addEventListener("click", function(){
+function generatePass(){
     pass1EL.textContent = ""
     pass2EL.textContent = ""
     for (let i = 1; i < 16; i++){
@@ -14,5 +14,5 @@ generatePassBtn.addEventListener("click", function(){
         pass1EL.textContent += characters[pass1]
         pass2EL.textContent += characters[pass2]
     }
-})
+}
 
